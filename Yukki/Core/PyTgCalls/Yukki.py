@@ -17,7 +17,7 @@ from pytgcalls.types.input_stream.quality import (HighQualityAudio,
                                                   MediumQualityVideo)
 from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
 
-from config import STRING1, STRING2, STRING3, STRING4, STRING5, get_queue
+from config import STRING1,get_queue
 from Yukki import (ASS_CLI_1, 
                    MUSIC_BOT_NAME, app, db_mem)
 from Yukki.Core.PyTgCalls import Queues
