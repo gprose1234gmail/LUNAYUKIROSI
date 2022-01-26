@@ -17,8 +17,8 @@ from config import MONGO_DB_URI as mango
 from config import (MUSIC_BOT_NAME, OWNER_ID, STRING1, STRING2, STRING3,
                     STRING4, STRING5, SUDO_USERS, UPSTREAM_BRANCH,
                     UPSTREAM_REPO, get_queue)
-from Yukki.Core.Clients.cli import (ASS_CLI_1, ASS_CLI_2, ASS_CLI_3, ASS_CLI_4,
-                                    ASS_CLI_5, LOG_CLIENT, app)
+from Yukki.Core.Clients.cli import (ASS_CLI_1, 
+                                     LOG_CLIENT, app)
 from Yukki.Utilities.changers import time_to_seconds
 from Yukki.Utilities.tasks import install_requirements
 
@@ -44,10 +44,7 @@ boottime = time.time()
 ### Clients
 app = app
 ASS_CLI_1 = ASS_CLI_1
-ASS_CLI_2 = ASS_CLI_2
-ASS_CLI_3 = ASS_CLI_3
-ASS_CLI_4 = ASS_CLI_4
-ASS_CLI_5 = ASS_CLI_5
+
 LOG_CLIENT = LOG_CLIENT
 aiohttpsession = ClientSession()
 
@@ -93,10 +90,7 @@ async def initiate_bot():
     global SUDOERS, OWNER_ID, ASSIDS
     global BOT_ID, BOT_NAME, BOT_USERNAME
     global ASSID1, ASSNAME1, ASSMENTION1, ASSUSERNAME1
-    global ASSID2, ASSNAME2, ASSMENTION2, ASSUSERNAME2
-    global ASSID3, ASSNAME3, ASSMENTION3, ASSUSERNAME3
-    global ASSID4, ASSNAME4, ASSMENTION4, ASSUSERNAME4
-    global ASSID5, ASSNAME5, ASSMENTION5, ASSUSERNAME5
+    
     global Heroku_cli, Heroku_app
     os.system("clear")
     header = Table(show_header=True, header_style="bold yellow")
