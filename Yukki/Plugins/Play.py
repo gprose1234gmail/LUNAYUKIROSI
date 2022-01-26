@@ -174,7 +174,7 @@ async def play(_, message: Message):
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("🔍 **Searching**...")
+        mystic = await message.reply_text("🔍 **Luna music searching plz wait**...")
         query = message.text.split(None, 1)[1]
         (
             title,
